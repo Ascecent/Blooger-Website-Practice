@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts
+    Montserrat & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Normalize styles -->
+    <link rel="stylesheet" href="styles/general/normalize.css" />
+
+    <!-- Owl-Carousel styles -->
+    <link
+      rel="stylesheet"
+      href="styles/general/owl-carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/general/owl-carousel/owl.theme.default.min.css"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>Blooger Website</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION BEGIN -->
+    <header class="header flex-row-container montserrat text-gray">
+      <!-- Logo -->
+      <p class="header__logo main-title">Blooger</p>
+
+      <!-- Toggle menu icon -->
+      <div class="header__toggle-icon">
+        <span class="fas fa-bars fa-2x"></span>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="header__navbar">
+        <ul class="navbar__list-items flex-row-container">
+          <li class="list-items__item">
+            <a href="#" class="item__link">Home</a>
+          </li>
+          <li class="list-items__item">
+            <a href="#" class="item__link">Category</a>
+          </li>
+          <li class="list-items__item">
+            <a href="#" class="item__link">Archive</a>
+          </li>
+          <li class="list-items__item">
+            <a href="#" class="item__link">Pages</a>
+          </li>
+          <li class="list-items__item">
+            <a href="#" class="item__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Social Media -->
+      <ul class="header__social-media flex-row-container">
+        <li class="social-media__item">
+          <a href="#" class="item__link"
+            ><span class="fab fa-facebook"></span
+          ></a>
+        </li>
+        <li class="social-media__item">
+          <a href="#" class="item__link"
+            ><span class="fab fa-twitter"></span
+          ></a>
+        </li>
+        <li class="social-media__item">
+          <a href="#" class="item__link"
+            ><span class="fab fa-instagram"></span
+          ></a>
+        </li>
+        <li class="social-media__item">
+          <a href="#" class="item__link"
+            ><span class="fab fa-youtube"></span
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN SECTION BEGIN -->
+    <main class="main">
+      <!-- Banner -->
+      <section class="main__banner">
+        <div class="banner__text montserrat">
+          <p class="text__subtitle secondary-title">Tours & Travels</p>
+          <h1 class="text__heading main-title">Amazing Place on Earth</h1>
+          <a href="#" class="btn primary-btn poppins">Explore</a>
+        </div>
+      </section>
+
+      <!-- Blog Carousel -->
+      <section class="main__carousel wrapper-padding">
+        <div class="owl-carousel owl-theme container__carousel">
+          <!-- Item #1 -->
+          <div class="carousel__item">
+            <img
+              class="item__image"
+              src="assets/Blog-post/post-1.jpg"
+              alt="Post"
+            />
+            <div class="carousel-item__description">
+              <h2
+                class="carousel-description__heading secondary-title montserrat"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </h2>
+              <a href="#" class="btn primary-btn poppins">Read More</a>
+              <p class="description__timer poppins">2 minutes</p>
+            </div>
+          </div>
+
+          <!-- Item #2 -->
+          <div class="carousel__item">
+            <img
+              class="item__image"
+              src="assets/Blog-post/post-2.jpg"
+              alt="Post"
+            />
+            <div class="carousel-item__description">
+              <h2
+                class="carousel-description__heading secondary-title montserrat"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </h2>
+              <a href="#" class="btn primary-btn poppins">Read More</a>
+              <p class="description__timer poppins">2 minutes</p>
+            </div>
+          </div>
+
+          <!-- Item #3 -->
+          <div class="carousel__item">
+            <img
+              class="item__image"
+              src="assets/Blog-post/post-3.jpg"
+              alt="Post"
+            />
+            <div class="carousel-item__description">
+              <h2
+                class="carousel-description__heading secondary-title montserrat"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </h2>
+              <a href="#" class="btn primary-btn poppins">Read More</a>
+              <p class="description__timer poppins">2 minutes</p>
+            </div>
+          </div>
+
+          <!-- Item #4 -->
+          <div class="carousel__item">
+            <img
+              class="item__image"
+              src="assets/Blog-post/post-4.png"
+              alt="Post"
+            />
+            <div class="carousel-item__description">
+              <h2
+                class="carousel-description__heading secondary-title montserrat"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </h2>
+              <a href="#" class="btn primary-btn poppins">Read More</a>
+              <p class="description__timer poppins">2 minutes</p>
+            </div>
+          </div>
+
+          <!-- Item #5 -->
+          <div class="carousel__item">
+            <img
+              class="item__image"
+              src="assets/Blog-post/post-5.png"
+              alt="Post"
+            />
+            <div class="carousel-item__description">
+              <h2
+                class="carousel-description__heading secondary-title montserrat"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </h2>
+              <a href="#" class="btn primary-btn poppins">Read More</a>
+              <p class="description__timer poppins">2 minutes</p>
+            </div>
+          </div>
+
+          <!-- Item #6 -->
+          <div class="carousel__item">
+            <img
+              class="item__image"
+              src="assets/Blog-post/post-6.png"
+              alt="Post"
+            />
+            <div class="carousel-item__description">
+              <h2
+                class="carousel-description__heading secondary-title montserrat"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </h2>
+              <a href="#" class="btn primary-btn poppins">Read More</a>
+              <p class="description__timer poppins">2 minutes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Owl navigation -->
+        <div class="owl-navigation">
+          <span class="owl-btn owl-nav-prev fas fa-arrow-left"></span>
+          <span class="owl-btn owl-nav-next fas fa-arrow-right"></span>
+        </div>
+      </section>
+
+      <!-- Blogpost section -->
+
+      <section class="main__blog wrapper-padding">
+        <!-- Blog posts -->
+        <div class="blog__main-content">
+          <!-- Post #1 -->
+          <div class="main-content__item">
+            <div class="item__information poppins">
+              <div class="information__image-wrapper">
+                <img
+                  src="assets/Blog-post/blog1.jpg"
+                  alt="blog 1"
+                  class="information__image"
+                />
+              </div>
+
+              <div class="information__description text-gray">
+                <span class="description__user">
+                  <span class="fas fa-user"></span>
+                  &nbsp;&nbsp;Admin
+                </span>
+                <span class="description__date">
+                  <span class="fas fa-calendar-alt"></span>
+                  &nbsp;&nbsp;January 19,2019
+                </span>
+                <span class="description__comments"> 5 Comments </span>
+              </div>
+            </div>
+
+            <div class="item__content poppins">
+              <h2 class="content__heading montserrat secondary-title">
+                <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+              </h2>
+              <p class="content__description text-light-gray">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                tenetur nulla doloribus et blanditiis neque delectus excepturi
+                eaque at, est dolorem, aperiam libero.
+              </p>
+              <a href="#" class="btn content__btn"
+                >Read More <span class="fas fa-arrow-right"></span
+              ></a>
+            </div>
+          </div>
+          <hr />
+          <!-- Post #2 -->
+          <div class="main-content__item">
+            <div class="item__information poppins">
+              <div class="information__image-wrapper">
+                <img
+                  src="assets/Blog-post/blog2.jpg"
+                  alt="blog 2"
+                  class="information__image"
+                />
+              </div>
+
+              <div class="information__description text-gray">
+                <span class="description__user">
+                  <span class="fas fa-user"></span>
+                  &nbsp;&nbsp;Admin
+                </span>
+                <span class="description__date">
+                  <span class="fas fa-calendar-alt"></span>
+                  &nbsp;&nbsp;January 19,2019
+                </span>
+                <span class="description__comments"> 5 Comments </span>
+              </div>
+            </div>
+
+            <div class="item__content poppins">
+              <h2 class="content__heading montserrat secondary-title">
+                <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+              </h2>
+              <p class="content__description text-light-gray">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                tenetur nulla doloribus et blanditiis neque delectus excepturi
+                eaque at, est dolorem, aperiam libero.
+              </p>
+              <a href="#" class="btn content__btn"
+                >Read More <span class="fas fa-arrow-right"></span
+              ></a>
+            </div>
+          </div>
+          <hr />
+          <!-- Post #3 -->
+          <div class="main-content__item">
+            <div class="item__information poppins">
+              <div class="information__image-wrapper">
+                <img
+                  src="assets/Blog-post/blog3.jpg"
+                  alt="blog 3"
+                  class="information__image"
+                />
+              </div>
+
+              <div class="information__description text-gray">
+                <span class="description__user">
+                  <span class="fas fa-user"></span>
+                  &nbsp;&nbsp;Admin
+                </span>
+                <span class="description__date">
+                  <span class="fas fa-calendar-alt"></span>
+                  &nbsp;&nbsp;January 19,2019
+                </span>
+                <span class="description__comments"> 5 Comments </span>
+              </div>
+            </div>
+
+            <div class="item__content poppins">
+              <h2 class="content__heading montserrat secondary-title">
+                <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+              </h2>
+              <p class="content__description text-light-gray">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                tenetur nulla doloribus et blanditiis neque delectus excepturi
+                eaque at, est dolorem, aperiam libero.
+              </p>
+              <a href="#" class="btn content__btn"
+                >Read More <span class="fas fa-arrow-right"></span
+              ></a>
+            </div>
+          </div>
+          <hr />
+          <!-- Post #4 -->
+          <div class="main-content__item">
+            <div class="item__information poppins">
+              <div class="information__image-wrapper">
+                <img
+                  src="assets/Blog-post/blog4.jpg"
+                  alt="blog 4"
+                  class="information__image"
+                />
+              </div>
+
+              <div class="information__description text-gray">
+                <span class="description__user">
+                  <span class="fas fa-user"></span>
+                  &nbsp;&nbsp;Admin
+                </span>
+                <span class="description__date">
+                  <span class="fas fa-calendar-alt"></span>
+                  &nbsp;&nbsp;January 19,2019
+                </span>
+                <span class="description__comments"> 5 Comments </span>
+              </div>
+            </div>
+
+            <div class="item__content poppins">
+              <h2 class="content__heading montserrat secondary-title">
+                <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+              </h2>
+              <p class="content__description text-light-gray">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                tenetur nulla doloribus et blanditiis neque delectus excepturi
+                eaque at, est dolorem, aperiam libero.
+              </p>
+              <a href="#" class="btn content__btn"
+                >Read More <span class="fas fa-arrow-right"></span
+              ></a>
+            </div>
+          </div>
+
+          <div class="main-content__pagination poppins">
+            <span class="fas fa-chevron-left text-gray"></span>
+            <span class="pagination__item">1</span>
+            <span class="pagination__item">2</span>
+            <span class="pagination__item">3</span>
+            <span class="fas fa-chevron-right text-gray"></span>
+          </div>
+        </div>
+
+        <!-- Blog sidebar -->
+        <aside class="blog__sidebar">
+          <!-- Categories -->
+          <div class="sidebar__categories">
+            <h2 class="catergories__heading montserrat secondary-title">
+              Categories
+            </h2>
+            <ul class="categories__list poppins text-gray">
+              <li class="list__category flex-row-container">
+                <span>Software</span><span>(05)</span>
+              </li>
+              <li class="list__category flex-row-container">
+                <span>Technhology</span><span>(02)</span>
+              </li>
+              <li class="list__category flex-row-container">
+                <span>Lifestyle</span><span>(07)</span>
+              </li>
+              <li class="list__category flex-row-container">
+                <span>Shooping</span><span>(01)</span>
+              </li>
+              <li class="list__category flex-row-container">
+                <span>Food</span><span>(08)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Popular posts -->
+          <div class="sidebar__popular-posts">
+            <h2 class="popular-posts__heading montserrat secondary-title">
+              Popular Posts
+            </h2>
+            <!-- Post #1 -->
+            <div class="main-content__item">
+              <div class="item__information poppins">
+                <div class="information__image-wrapper">
+                  <img
+                    src="assets/Blog-post/blog1.jpg"
+                    alt="blog 1"
+                    class="information__image"
+                  />
+                </div>
+
+                <div class="information__description text-gray">
+                  <span class="description__user">
+                    <span class="fas fa-user"></span>
+                    &nbsp;&nbsp;Admin
+                  </span>
+                  <span class="description__date">
+                    <span class="fas fa-calendar-alt"></span>
+                    &nbsp;&nbsp;January 19,2019
+                  </span>
+                  <span class="description__comments"> 5 Comments </span>
+                </div>
+              </div>
+
+              <div class="item__content poppins">
+                <h2 class="content__heading montserrat secondary-title">
+                  <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+                </h2>
+                <p class="content__description text-light-gray">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                  tenetur nulla doloribus et blanditiis neque delectus excepturi
+                  eaque at, est dolorem, aperiam libero.
+                </p>
+                <a href="#" class="btn content__btn"
+                  >Read More <span class="fas fa-arrow-right"></span
+                ></a>
+              </div>
+            </div>
+
+            <!-- Post #2 -->
+            <div class="main-content__item">
+              <div class="item__information poppins">
+                <div class="information__image-wrapper">
+                  <img
+                    src="assets/Blog-post/blog2.jpg"
+                    alt="blog 2"
+                    class="information__image"
+                  />
+                </div>
+
+                <div class="information__description text-gray">
+                  <span class="description__user">
+                    <span class="fas fa-user"></span>
+                    &nbsp;&nbsp;Admin
+                  </span>
+                  <span class="description__date">
+                    <span class="fas fa-calendar-alt"></span>
+                    &nbsp;&nbsp;January 19,2019
+                  </span>
+                  <span class="description__comments"> 5 Comments </span>
+                </div>
+              </div>
+
+              <div class="item__content poppins">
+                <h2 class="content__heading montserrat secondary-title">
+                  <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+                </h2>
+                <p class="content__description text-light-gray">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                  tenetur nulla doloribus et blanditiis neque delectus excepturi
+                  eaque at, est dolorem, aperiam libero.
+                </p>
+                <a href="#" class="btn content__btn"
+                  >Read More <span class="fas fa-arrow-right"></span
+                ></a>
+              </div>
+            </div>
+
+            <!-- Post #3 -->
+            <div class="main-content__item">
+              <div class="item__information poppins">
+                <div class="information__image-wrapper">
+                  <img
+                    src="assets/Blog-post/blog3.jpg"
+                    alt="blog 3"
+                    class="information__image"
+                  />
+                </div>
+
+                <div class="information__description text-gray">
+                  <span class="description__user">
+                    <span class="fas fa-user"></span>
+                    &nbsp;&nbsp;Admin
+                  </span>
+                  <span class="description__date">
+                    <span class="fas fa-calendar-alt"></span>
+                    &nbsp;&nbsp;January 19,2019
+                  </span>
+                  <span class="description__comments"> 5 Comments </span>
+                </div>
+              </div>
+
+              <div class="item__content poppins">
+                <h2 class="content__heading montserrat secondary-title">
+                  <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+                </h2>
+                <p class="content__description text-light-gray">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                  tenetur nulla doloribus et blanditiis neque delectus excepturi
+                  eaque at, est dolorem, aperiam libero.
+                </p>
+                <a href="#" class="btn content__btn"
+                  >Read More <span class="fas fa-arrow-right"></span
+                ></a>
+              </div>
+            </div>
+
+            <!-- Post #4 -->
+            <div class="main-content__item">
+              <div class="item__information poppins">
+                <div class="information__image-wrapper">
+                  <img
+                    src="assets/Blog-post/blog4.jpg"
+                    alt="blog 4"
+                    class="information__image"
+                  />
+                </div>
+
+                <div class="information__description text-gray">
+                  <span class="description__user">
+                    <span class="fas fa-user"></span>
+                    &nbsp;&nbsp;Admin
+                  </span>
+                  <span class="description__date">
+                    <span class="fas fa-calendar-alt"></span>
+                    &nbsp;&nbsp;January 19,2019
+                  </span>
+                  <span class="description__comments"> 5 Comments </span>
+                </div>
+              </div>
+
+              <div class="item__content poppins">
+                <h2 class="content__heading montserrat secondary-title">
+                  <a href="#" class="text-gray">Lorem ipsum dolor sit amet.</a>
+                </h2>
+                <p class="content__description text-light-gray">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corrupti sunt labore cumque! Animi eveniet veritatis iusto
+                  tenetur nulla doloribus et blanditiis neque delectus excepturi
+                  eaque at, est dolorem, aperiam libero.
+                </p>
+                <a href="#" class="btn content__btn"
+                  >Read More <span class="fas fa-arrow-right"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION BEGIN -->
+    <footer class="footer"></footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- Javascript links -->
+
+    <!-- Jquery -->
+    <script src="js/jquery/jquery-v3.6.0.min.js"></script>
+
+    <!-- Owl-Carousel -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Custom javascript -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

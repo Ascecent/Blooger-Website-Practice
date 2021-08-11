@@ -1,0 +1,20 @@
+/*=======================
+=== PROJECT VARIABLES ===
+=======================*/
+:root {
+  /* Colors */
+  --white: #fff;
+  --gray: #3f4954;
+  --light-gray: #686666da;
+  --dark-bg: #0f0f0f;
+  --dark-green: #104f55;
+  --black: #000;
+  --light-blue: rgb(187, 225, 251);
+
+  /* Gradient colors */
+  --sky-gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /* Fonts */
+  --montserrat: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
