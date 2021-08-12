@@ -16,6 +16,8 @@
   padding: 1rem 3rem;
   color: var(--black);
   background: var(--sky-gradient);
+  border: none;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -36,6 +38,12 @@
 .wrapper-padding {
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+.information__description {
+  padding: 1rem 2rem;
+  display: inline-block;
+  position: absolute;
 }
 
 /* Font utilities */
@@ -220,15 +228,14 @@
   transform: scale(1.3);
 }
 
-.information__description {
-  background: var(--sky-gradient);
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  display: inline-block;
-  position: absolute;
+.blog-item-information__description {
   left: 50%;
   bottom: -1rem;
   transform: translateX(-50%);
+  border-radius: 2rem;
+  background: var(--sky-gradient);
+  min-width: 30rem;
+  text-align: center;
 }
 
 .description__date {
@@ -237,6 +244,10 @@
 
 .item__content {
   margin: 2rem 0;
+}
+
+.content__heading {
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .content__description {
@@ -257,15 +268,174 @@
 }
 
 /* Sidebar styles */
+.sidebar__section {
+  margin-top: 10rem;
+}
+
 .list__category {
   background: var(--sky-gradient);
   padding: 1rem;
-  margin: 1rem 0 0.5rem 1rem;
+  margin: 1rem 0 0.5rem 1.5rem;
   border-radius: 2rem;
   justify-content: space-between;
 }
 
+/* Popular posts */
+.popular-post__information {
+  background: var(--white);
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.popular-post__information .description__date {
+  margin: 0 1rem 0 0;
+}
+
+.popular-post__heading {
+  font-size: 1.5rem;
+}
+
+/* Newsletter form */
+.newsletter__form {
+  padding-left: 2rem;
+}
+.form__item {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Popular tags styles */
+.popular-tags__items {
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.items__tag {
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  background: var(--sky-gradient);
+}
+
+/*===========================
+=== FOOTER SECTION STYLES ===
+===========================*/
+.footer {
+  background-color: var(--dark-bg);
+  margin-top: 5rem;
+  color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.footer__item {
+  width: 100%;
+}
+
+.footer-item__heading {
+  margin-bottom: 1.5rem;
+}
+
+/* Newsletter section */
+.news__form {
+  position: relative;
+}
+
+.newsletter__description {
+  margin-bottom: 1rem;
+}
+
+.news-form__input {
+  width: 70%;
+  padding: 0.5rem;
+  background-color: var(--black);
+  border: none;
+  color: var(--light-gray);
+}
+
+.form__btn {
+  background: var(--sky-gradient);
+  position: absolute;
+  right: 30%;
+  top: 0;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+}
+
+/* Instagram section */
+.instagram__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Follow Us section */
+.social-icons__icon {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Copyright section */
+.footer__copyright {
+  margin-top: 5rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.copyright__white {
+  color: var(--white);
+}
+
+/* Scroll up button */
+.scroll-btn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: rgb(16, 79, 85);
+  color: var(--black);
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.scroll-btn:hover {
+  background: var(--white);
+}
+
+@media screen and (max-width: 1300px) {
+  /* Main */
+  .main__blog {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar__categories {
+    margin-top: 5rem;
+  }
+
+  /* Footer */
+  .footer__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  /* Header */
   .header,
   .navbar__list-items {
     flex-direction: column;
@@ -287,5 +457,21 @@
   .header__navbar .item__link {
     width: 10rem;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* Main */
+  .popular-post__information {
+    display: none;
+  }
+
+  .blog-item-information__description {
+    display: none;
+  }
+
+  /* Footer */
+  .footer__wrapper {
+    grid-template-columns: 1fr;
   }
 }

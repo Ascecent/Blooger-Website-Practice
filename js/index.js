@@ -34,4 +34,14 @@ $(document).ready(function () {
       },
     },
   });
+
+  /* Scroll button */
+  $(".scroll-btn").click(function () {
+    $("html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
 });
